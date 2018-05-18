@@ -26,7 +26,12 @@ public class App {
     }
 
     public static void main(String[] args) {
-        App app = new App("Hello World");
-        System.out.println(app.getMessage());
+        if (args.length != 1) {
+           System.out.println("Please provide a single argument to this program - the message to display");
+        } else {
+            String message = args[0];
+            App app = new App("Hello World");
+            System.out.println(app.getMessage());
+        }
     }
 }
