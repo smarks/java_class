@@ -16,4 +16,8 @@ public class AppTest {
         assertEquals("Verify the message is set correctly", message, app.getMessage());
     }
 
+ @Test
+    public void testBroken() {
+       fail("yikes");
+    }
 }
