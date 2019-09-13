@@ -3,7 +3,7 @@ jobs:
 
   build:
 
-    working_directory: ~/
+    working_directory: ~/foo
 
     docker:
       - image: circleci/openjdk:8-jdk-stretch
