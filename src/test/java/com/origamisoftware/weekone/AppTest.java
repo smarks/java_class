@@ -13,7 +13,7 @@ public class AppTest {
     public void testMessage() {
         String message = "Hello World";
         App app = new App(message);
-        assertEquals("Verify the message is set correctly", message, "not correct");
+        assertEquals("Verify the message is set correctly", message, app.getMessage());
     }
 
 }
